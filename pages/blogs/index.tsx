@@ -23,7 +23,7 @@ type Props = {
 export default function Home({ posts }: Props) {
   return (
     <div className="max-w-2xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6">技術ブログ 📝</h1>
+      <h1 className="text-3xl font-bold mb-6">技術ブログindex 📝</h1>
       <ul className="space-y-4">
         {posts.map((post) => (
           <li key={post.slug} className="border p-4 rounded hover:bg-gray-50">

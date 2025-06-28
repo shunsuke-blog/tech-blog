@@ -7,7 +7,7 @@ export default async function Home() {
 
   return (
     <main className="p-8">
-      <h1 className="text-2xl font-bold mb-4">📝 技術記事一覧</h1>
+      <h1 className="text-2xl font-bold mb-4">📝 技術記事一覧page</h1>
       <ul>
         {posts.map((post) => (
           <li key={post.slug} className="mb-4">
