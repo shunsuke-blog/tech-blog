@@ -21,8 +21,7 @@ export default function BlogList({ posts }: Props) {
       <ul className="space-y-4">
         {posts.map((post) => (
           <li key={post.slug} className="border p-4 rounded hover:bg-gray-50">
-            <Link href={`/blogs/${post.slug}`}>
-              className="block"
+            <Link href={`/blogs/${post.slug}`} className="block">
               <h2 className="text-xl font-semibold">{post.title}</h2>
               <p className="text-gray-500 text-sm">{post.date}</p>
             </Link>
@@ -32,6 +31,7 @@ export default function BlogList({ posts }: Props) {
     </div>
   );
 }
+
 
 export async function getStaticProps() {
   // const postsDirectory = path.join(process.cwd(), 'posts');
