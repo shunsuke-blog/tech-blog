@@ -24,7 +24,7 @@ export default function BlogList({ posts }: Props) {
             <Link href={`/blogs/${post.slug}`}>
               className="block"
               <h2 className="text-xl font-semibold">{post.title}</h2>
-              <p className="text-gray-500 text-sm">{post.date}</p>ï
+              <p className="text-gray-500 text-sm">{post.date}</p>
             </Link>
           </li>
         ))}
