@@ -28,10 +28,13 @@ export default function Home() {
       <h1 className="text-4xl font-bold text-blue-6s0">
         ここはトップページです。
       </h1>
-      {/* <link href={'/bogs/index'} className='block'>
-        記事一覧へ
-      </link> */}
-    </main>
+      {/* <link href="@/blogs" className='block'> */}
+      <p className="whitespace-pre-line">
+        <Link href="/blogs" className="text-lg text-blue-500 underline hover:text-blue-700">
+          記事一覧へ
+        </Link>
+      </p>
+    </main >
   );
 }
 
