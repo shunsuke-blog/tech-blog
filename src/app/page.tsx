@@ -25,9 +25,12 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <main className="flex min-h-screen items-center justify-center bg-gray-100">
-      <h1 className="text-4xl font-bold text-blue-600">
-        Tailwind CSS 動いてるよー！🎉
+      <h1 className="text-4xl font-bold text-blue-6s0">
+        ここはトップページです。
       </h1>
+      {/* <link href={'/bogs/index'} className='block'>
+        記事一覧へ
+      </link> */}
     </main>
   );
 }

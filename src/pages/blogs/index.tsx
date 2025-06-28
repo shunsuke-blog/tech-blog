@@ -23,8 +23,8 @@ export default function BlogList({ posts }: Props) {
           <li key={post.slug} className="border p-4 rounded hover:bg-gray-50">
             <Link href={`/blogs/${post.slug}`} className="block">
               <h2 className="text-xl font-semibold">{post.title}</h2>
-              <p className="text-gray-500 text-sm">{post.date}</p>
             </Link>
+            <p className="text-gray-500 text-sm">{post.date}</p>
           </li>
         ))}
       </ul>
