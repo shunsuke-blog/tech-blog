@@ -35,7 +35,8 @@ export default function BlogList({ posts }: Props) {
 }
 
 export async function getStaticProps() {
-  const postsDirectory = path.join(process.cwd(), 'posts');
+  // const postsDirectory = path.join(process.cwd(), 'posts');
+  const postsDirectory = path.join(process.cwd(), 'src', 'posts');
   const filenames = fs.readdirSync(postsDirectory);
 
   const posts = filenames.map((filename) => {
