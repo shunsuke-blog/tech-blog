@@ -8,6 +8,7 @@
 // }
 
 import Link from 'next/link';
+import { getAllPosts } from '@lib/posts';
 
 type PostMeta = {
   title: string;
@@ -39,8 +40,17 @@ export default function Home({ posts }: Props) {
   );
 }
 
-export async function getStaticProps() {
-  // （ここはしゅんすけが書いた処理でOK！）
-  // posts データを取得して return { props: { posts } }
-}
+// export async function getStaticProps() {
+//   // （ここはしゅんすけが書いた処理でOK！）
+//   // posts データを取得して return { props: { posts } }
+// }
 
+// pages/blogs/index.tsx
+export async function getStaticProps() {
+  const posts = getAllPosts(); // ← 同期or非同期でもOK
+  return {
+    props: {
+      posts,
+    },
+  };
+}
