@@ -10,3 +10,9 @@ module.exports = {
   },
   plugins: [],
 }
+
+// red:{
+//   500; "#ef4444"
+// }
+
+
